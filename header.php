@@ -28,6 +28,7 @@ if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_
 					<a class="fu-btn fu-btn--hero fu-btn--sm" href="<?php echo esc_url( fu_link( fu_opt( 'nav_cta_url' ) ) ); ?>"><?php echo esc_html( fu_opt( 'nav_cta_text' ) ); ?></a>
 				<?php endif; ?>
 			</div>
+			<?php echo function_exists( 'fu_wc_cart_link' ) ? fu_wc_cart_link() : ''; // phpcs:ignore -- escaped in function. ?>
 			<button class="fu-nav__toggle" type="button" aria-expanded="false" aria-controls="fu-nav-mobile" aria-label="<?php esc_attr_e( 'Toggle menu', 'future-ukraine' ); ?>">
 				<?php echo fu_icon( 'menu', 'fu-nav__open' ); // phpcs:ignore ?>
 				<?php echo fu_icon( 'x', 'fu-nav__close' ); // phpcs:ignore ?>

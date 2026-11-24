@@ -393,6 +393,74 @@
             "isInner": false
         },
         {
+            "id": "9e792bd",
+            "elType": "section",
+            "settings": {
+                "layout": "full_width",
+                "gap": "no",
+                "padding": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": true
+                },
+                "margin": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": true
+                },
+                "css_classes": "fu-el-section"
+            },
+            "elements": [
+                {
+                    "id": "92c7910",
+                    "elType": "column",
+                    "settings": {
+                        "_column_size": 100,
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "9ce1126",
+                            "elType": "widget",
+                            "widgetType": "fu-shop",
+                            "settings": {
+                                "anchor": "shop",
+                                "kicker": "// SHOP",
+                                "title": "SUPPORT",
+                                "highlight": "SHOP",
+                                "highlight_color": "gold",
+                                "intro": "Every purchase supports Ukraine. Handmade goods and merchandise — proceeds go to aid.",
+                                "count": 8,
+                                "category": "",
+                                "orderby": "date",
+                                "featured_only": "",
+                                "view_text": "View product",
+                                "view_all_text": "All Products",
+                                "view_all_url": "",
+                                "empty_text": "Products will appear here soon."
+                            },
+                            "elements": []
+                        }
+                    ],
+                    "isInner": false
+                }
+            ],
+            "isInner": false
+        },
+        {
             "id": "ce62531",
             "elType": "section",
             "settings": {
@@ -443,8 +511,10 @@
                                 "highlight": "REPORTS",
                                 "highlight_color": "blue",
                                 "intro": "Complete transparency in all our operations. Download our financial statements, audit reports, and impact assessments.",
+                                "source": "auto",
+                                "posts_count": 4,
                                 "view_all_text": "View All Reports",
-                                "view_all_url": "#",
+                                "view_all_url": "",
                                 "reports": [
                                     {
                                         "type": "Financial",
@@ -781,6 +851,7 @@
                                 "facebook": "#",
                                 "instagram": "#",
                                 "linkedin": "#",
+                                "twitter": "",
                                 "hours_week": "09:00 - 18:00",
                                 "hours_sat": "10:00 - 14:00",
                                 "hours_sun": "Closed",

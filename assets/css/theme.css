@@ -340,6 +340,31 @@ body.fu-theme {
 .fu-trust { text-align: center; margin-top: 3rem !important; font-size: .875rem; color: hsl(var(--muted-foreground)); position: relative; }
 .fu-trust__sep { margin: 0 .5rem; }
 
+/* ---------- Shop ---------- */
+.fu-cards--shop { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+@media (min-width: 768px) { .fu-cards--shop { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); } }
+.fu-cards--shop:has(> .fu-product:only-child) { grid-template-columns: minmax(0, 340px); justify-content: center; }
+.fu-product__img { position: relative; display: block; margin: -1.5rem -1.5rem 1.25rem; aspect-ratio: 1; overflow: hidden; border-radius: calc(var(--radius) - 4px) calc(var(--radius) - 4px) 0 0; background: hsl(var(--muted) / .4); }
+.fu-product__img img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; margin: 0 !important; }
+.fu-product:hover .fu-product__img img { transform: scale(1.05); }
+.fu-product__sale { position: absolute; top: .75rem; left: .75rem; background: hsl(var(--primary)); color: hsl(var(--primary-foreground)); }
+.fu-product .fu-card__title { font-size: 1rem; line-height: 1.35; }
+.fu-product__price { font-family: var(--fu-font-display); font-size: 1.25rem; font-weight: 700; color: hsl(var(--primary)); margin-bottom: 1.25rem; }
+.fu-product__price del { color: hsl(var(--muted-foreground)); font-size: .9rem; font-weight: 400; margin-right: .4rem; }
+.fu-product__price ins { text-decoration: none; }
+.fu-product .added_to_cart { display: block; text-align: center; margin-top: .75rem; font-size: .875rem; color: hsl(var(--primary)); font-family: var(--fu-font-mono); }
+.fu-product .fu-btn.loading { opacity: .6; pointer-events: none; }
+.fu-product .fu-btn.added::after { content: ' ✓'; }
+
+/* Header cart */
+.fu-cart-link { position: relative; display: inline-flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; margin-left: 1rem; color: hsl(var(--foreground)); border-radius: calc(var(--radius) - 4px); }
+.fu-cart-link:hover { color: hsl(var(--primary)); background: hsl(var(--muted) / .4); }
+.fu-cart-link .fu-icon { width: 1.35rem; height: 1.35rem; }
+.fu-cart-count { position: absolute; top: 0; right: -2px; min-width: 1.1rem; height: 1.1rem; padding: 0 .25rem; border-radius: 9999px; background: hsl(var(--primary)); color: hsl(var(--primary-foreground)); font: 700 10px/1.1rem var(--fu-font-mono); text-align: center; }
+.fu-cart-count.is-empty { display: none; }
+.fu-nav__inner .fu-nav__desktop { margin-left: auto; }
+@media (max-width: 767px) { .fu-cart-link { margin-left: auto; margin-right: .25rem; } }
+
 /* ---------- Reports ---------- */
 .fu-report { display: flex; align-items: flex-start; gap: 1rem; }
 .fu-report .fu-card__icon { margin: 0; }

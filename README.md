@@ -4,7 +4,7 @@ WordPress port of [kangarooo/future-ukraine](https://github.com/kangarooo/future
 
 Same design: dark olive background, Ukrainian blue and gold accents, Orbitron / JetBrains Mono / Inter type, grid and scan-line effects, gradient-border cards. Same content and section order:
 
-Hero → About / Mission → Fundraising goals → Donate → Financial reports → Field news → Volunteer → FAQ → Contact
+Hero → About / Mission → Fundraising goals → Donate → Shop (WooCommerce) → Financial reports → Field news → Volunteer → FAQ → Contact
 
 ## Install
 
@@ -27,6 +27,18 @@ The import is also run automatically the first time the theme is activated. It:
 - **Header and footer:** use **Appearance → Customize → Future Ukraine** for the brand text, header button, footer text, registration line, copyright, meta description and the email address that form submissions go to. With Elementor Pro you can replace the header and footer using Theme Builder, because all core locations are registered.
 - **News:** this section shows the latest WordPress posts. You can limit it to one category in the widget.
 - **Without Elementor:** the theme still renders every section. You can use `[fu_home]` for all sections or `[fu_section name="donate"]` for one; any field can be passed as an attribute.
+
+## Shop (WooCommerce)
+
+When WooCommerce is active, the theme provides:
+
+- an **`FU · Shop`** widget that shows products as cards in the same style. You can set how many to show, the category, the sort order and whether to show only featured products. Simple products get an AJAX "Add to cart" button.
+- a cart icon in the header with an item count
+- matching dark styling for the shop, product, cart, checkout and account pages, including the block-based cart and checkout
+
+## Reports
+
+The `report` post type (**wp-admin → Reports**) has its archive at `/reports/`. Each report can have a type label and a PDF download link. The Reports widget shows the latest reports, and falls back to the list typed into the widget when there are none.
 
 ## Forms
 

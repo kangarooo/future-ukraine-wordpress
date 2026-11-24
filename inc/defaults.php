@@ -203,6 +203,34 @@ function fu_sections_schema() {
 			'repeaters' => array(),
 		),
 
+		'shop'      => array(
+			'title'     => __( 'Shop (WooCommerce products)', 'future-ukraine' ),
+			'icon'      => 'eicon-products',
+			'anchor'    => 'shop',
+			'fields'    => fu_heading_fields( '// SHOP', 'SUPPORT', 'SHOP', 'gold', 'Every purchase supports Ukraine. Handmade goods and merchandise — proceeds go to aid.' ) + array(
+				'count'          => array( 'number', __( 'Number of products', 'future-ukraine' ), 8 ),
+				'category'       => array( 'text', __( 'Product category slug (optional)', 'future-ukraine' ), '' ),
+				'orderby'        => array(
+					'select',
+					__( 'Order', 'future-ukraine' ),
+					'date',
+					array(
+						'date'       => __( 'Newest', 'future-ukraine' ),
+						'popularity' => __( 'Best selling', 'future-ukraine' ),
+						'price'      => __( 'Price: low to high', 'future-ukraine' ),
+						'title'      => __( 'Name', 'future-ukraine' ),
+						'rand'       => __( 'Random', 'future-ukraine' ),
+					),
+				),
+				'featured_only'  => array( 'switcher', __( 'Featured products only', 'future-ukraine' ), '' ),
+				'view_text'      => array( 'text', __( 'Product button text (when not added to cart)', 'future-ukraine' ), 'View product' ),
+				'view_all_text'  => array( 'text', __( '"All products" button text', 'future-ukraine' ), 'All Products' ),
+				'view_all_url'   => array( 'url', __( '"All products" link (empty = shop page)', 'future-ukraine' ), '' ),
+				'empty_text'     => array( 'text', __( 'Text when there are no products', 'future-ukraine' ), 'Products will appear here soon.' ),
+			),
+			'repeaters' => array(),
+		),
+
 		'reports'   => array(
 			'title'     => __( 'Financial reports', 'future-ukraine' ),
 			'icon'      => 'eicon-document-file',
@@ -337,7 +365,7 @@ function fu_sections_schema() {
  * @return array
  */
 function fu_home_sections() {
-	return apply_filters( 'fu_home_sections', array( 'hero', 'about', 'campaigns', 'donate', 'reports', 'news', 'volunteer', 'faq', 'contact' ) );
+	return apply_filters( 'fu_home_sections', array( 'hero', 'about', 'campaigns', 'donate', 'shop', 'reports', 'news', 'volunteer', 'faq', 'contact' ) );
 }
 
 /**
@@ -351,6 +379,7 @@ function fu_default_nav() {
 		'Reports'   => '#reports',
 		'Goals'     => '#campaigns',
 		'Donate'    => '#donate',
+		'Shop'      => '#shop',
 		'News'      => '#news',
 		'Volunteer' => '#volunteer',
 		'FAQ'       => '#faq',

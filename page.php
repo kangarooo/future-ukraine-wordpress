@@ -14,13 +14,15 @@ while ( have_posts() ) :
 		the_content();
 		continue;
 	}
+	$fu_wide = function_exists( 'is_woocommerce' ) && ( is_cart() || is_checkout() || is_account_page() );
+	$fu_wrap = $fu_wide ? 'fu-container' : 'fu-container fu-container--md';
 	?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class( 'fu-page' ); ?>>
-		<div class="fu-page__head"><div class="fu-container fu-container--md">
+		<div class="fu-page__head"><div class="<?php echo esc_attr( $fu_wrap ); ?>">
 			<div class="fu-kicker">// <?php echo esc_html( strtoupper( get_bloginfo( 'name' ) ) ); ?></div>
 			<?php the_title( '<h1 class="fu-page__title">', '</h1>' ); ?>
 		</div></div>
-		<div class="fu-container fu-container--md fu-prose">
+		<div class="<?php echo esc_attr( $fu_wrap ); ?> fu-prose<?php echo $fu_wide ? ' fu-prose--wc' : ''; ?>">
 			<?php
 			the_content();
 			wp_link_pages();

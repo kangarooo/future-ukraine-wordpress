@@ -1,0 +1,17 @@
+/*
+Theme Name: Future Ukraine
+Theme URI: https://github.com/kangarooo/future-ukraine-wordpress
+Author: kangarooo
+Author URI: https://github.com/kangarooo
+Description: Elementor-ready one-page theme for a Ukrainian humanitarian NGO in Latvia. Port of the future-ukraine React/Tailwind design: dark olive palette, Ukrainian blue and gold accents, Orbitron + JetBrains Mono typography. Ships with editable Elementor widgets for every section (Hero, Mission, Goals, Donate, Reports, News, Volunteer, FAQ, Contact), volunteer and contact forms that store submissions in wp-admin, and a one-click content importer.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.8
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: future-ukraine
+Tags: one-column, custom-menu, custom-logo, dark, full-width-template, elementor
+*/
+
+/* Main styles live in assets/css/theme.css */

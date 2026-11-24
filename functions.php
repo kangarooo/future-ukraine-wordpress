@@ -7,7 +7,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'FU_VERSION', '1.2.0' );
+define( 'FU_VERSION', '1.2.1' );
 define( 'FU_DIR', get_template_directory() );
 define( 'FU_URI', get_template_directory_uri() );
 

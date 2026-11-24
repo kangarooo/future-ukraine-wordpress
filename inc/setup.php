@@ -22,6 +22,22 @@ function fu_run_import( $force = false ) {
 	if ( ! $page_id || ! get_post( $page_id ) ) {
 		$existing = get_page_by_path( 'future-ukraine-home', OBJECT, 'page' );
 		$page_id  = $existing ? $existing->ID : 0;
+
+		// Reuse the current static front page when it is empty (e.g. a blank Elementor "Home").
+		if ( ! $page_id && 'page' === get_option( 'show_on_front' ) ) {
+			$front = get_post( (int) get_option( 'page_on_front' ) );
+			if ( $front && 'page' === $front->post_type && 'trash' !== $front->post_status ) {
+				$el_data = trim( (string) get_post_meta( $front->ID, '_elementor_data', true ) );
+				if ( '' === trim( wp_strip_all_tags( $front->post_content ) ) && ( '' === $el_data || '[]' === $el_data ) ) {
+					$page_id = $front->ID;
+					$force   = true;
+					if ( 'publish' !== $front->post_status ) {
+						wp_update_post( array( 'ID' => $page_id, 'post_status' => 'publish' ) );
+					}
+					$log[] = sprintf( 'Using the existing empty front page #%d', $page_id );
+				}
+			}
+		}
 	}
 
 	$content = "<!-- wp:shortcode -->\n[fu_home]\n<!-- /wp:shortcode -->";

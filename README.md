@@ -8,8 +8,10 @@ Hero → About / Mission → Fundraising goals → Donate → Financial reports 
 
 ## Install
 
-1. Download [`future-ukraine.zip`](future-ukraine.zip).
-2. In wp-admin, go to **Appearance → Themes → Add New → Upload Theme**, then install and activate it.
+1. Get the theme, either:
+   - **Code → Download ZIP** on GitHub, then in wp-admin go to **Appearance → Themes → Add New → Upload Theme** and upload it, or
+   - `git clone https://github.com/kangarooo/future-ukraine-wordpress wp-content/themes/future-ukraine` (this also lets you update with `git pull`).
+2. Activate **Future Ukraine** under Appearance → Themes.
 3. Install and activate **Elementor** (the free version is enough).
 4. Go to **Appearance → Future Ukraine Setup → Run import**.
 
@@ -48,7 +50,7 @@ The demo content copies the original repo exactly, including its **placeholder d
 ## Structure
 
 ```
-future-ukraine/
+/ (repository root = theme root)
 ├── style.css, functions.php, header.php, footer.php
 ├── front-page.php, page.php, single.php, index.php, 404.php
 ├── inc/
@@ -64,11 +66,5 @@ future-ukraine/
 ```
 
 Requires WordPress 6.0+ and PHP 7.4+. Tested on WordPress trunk with PHP 8, with no notices or warnings.
-
-## Build the zip
-
-```sh
-zip -r future-ukraine.zip future-ukraine -x '*.DS_Store'
-```
 
 License: GPL-2.0-or-later. Icons: [Lucide](https://lucide.dev) (ISC).

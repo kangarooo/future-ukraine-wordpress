@@ -67,6 +67,40 @@ function fu_widget_type( $section ) {
 }
 
 /**
+ * Full stored settings for a section widget: every text field and every repeater row,
+ * so the content lives in the page itself (editable in Elementor and by any tool that edits Elementor data).
+ *
+ * @param string $section Section.
+ * @return array|stdClass
+ */
+function fu_elementor_default_settings( $section ) {
+	$schema = fu_sections_schema();
+	if ( empty( $schema[ $section ] ) ) {
+		return new stdClass();
+	}
+	$out = array();
+	foreach ( $schema[ $section ]['fields'] as $key => $spec ) {
+		if ( 'media' === $spec[0] ) {
+			continue; // Empty media falls back to the theme image.
+		}
+		if ( 'anchor' === $key ) {
+			$out[ $key ] = $schema[ $section ]['anchor'];
+			continue;
+		}
+		$out[ $key ] = $spec[2];
+	}
+	foreach ( $schema[ $section ]['repeaters'] as $key => $rep ) {
+		$rows = array();
+		foreach ( $rep['default'] as $i => $row ) {
+			$row['_id'] = substr( md5( $section . $key . $i ), 0, 7 );
+			$rows[]     = $row;
+		}
+		$out[ $key ] = $rows;
+	}
+	return $out ? $out : new stdClass();
+}
+
+/**
  * Build Elementor page data for a list of sections (used by the importer and the JSON template).
  *
  * @param array $sections Section names.
@@ -99,7 +133,7 @@ function fu_elementor_page_data( $sections ) {
 							'id'         => substr( md5( 'wid-' . $section ), 0, 7 ),
 							'elType'     => 'widget',
 							'widgetType' => fu_widget_type( $section ),
-							'settings'   => new stdClass(),
+							'settings'   => fu_elementor_default_settings( $section ),
 							'elements'   => array(),
 						),
 					),

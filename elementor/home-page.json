@@ -50,7 +50,39 @@
                             "id": "e014ef5",
                             "elType": "widget",
                             "widgetType": "fu-hero",
-                            "settings": {},
+                            "settings": {
+                                "anchor": "top",
+                                "badge": "ACTIVE HUMANITARIAN OPERATIONS",
+                                "title_1": "STAND",
+                                "title_2": "WITH",
+                                "title_3": "UKRAINE",
+                                "subtitle": "Ukrainian NGO in Latvia providing critical humanitarian aid, military support, and rehabilitation services for those affected by war.",
+                                "cta_primary_text": "Donate Now",
+                                "cta_primary_url": "#donate",
+                                "cta_secondary_text": "Learn More",
+                                "cta_secondary_url": "#about",
+                                "show_scroll": "yes",
+                                "stats": [
+                                    {
+                                        "value": "€500K+",
+                                        "label": "AID DELIVERED",
+                                        "color": "gold",
+                                        "_id": "3b50b0a"
+                                    },
+                                    {
+                                        "value": "2,500+",
+                                        "label": "FAMILIES HELPED",
+                                        "color": "blue",
+                                        "_id": "9452c93"
+                                    },
+                                    {
+                                        "value": "100%",
+                                        "label": "TRANSPARENT",
+                                        "color": "light",
+                                        "_id": "90255fb"
+                                    }
+                                ]
+                            },
                             "elements": []
                         }
                     ],
@@ -103,7 +135,86 @@
                             "id": "a8a7c1d",
                             "elType": "widget",
                             "widgetType": "fu-about",
-                            "settings": {},
+                            "settings": {
+                                "anchor": "about",
+                                "kicker": "// ABOUT US",
+                                "title": "OUR",
+                                "highlight": "MISSION",
+                                "highlight_color": "gold",
+                                "intro": "We are a non-governmental organization operating from Latvia, dedicated to supporting Ukraine and its people through comprehensive humanitarian efforts.",
+                                "org_title": "REGISTERED &",
+                                "org_highlight": "VERIFIED",
+                                "org_text": "Our organization is officially registered in Latvia and operates in full compliance with international humanitarian standards. We maintain complete transparency in all our operations, with regular audits and detailed financial reports available to all donors.",
+                                "missions": [
+                                    {
+                                        "icon": "shield",
+                                        "title": "Military Support",
+                                        "description": "Providing essential equipment, drones, vehicles, and tactical gear to Ukrainian armed forces.",
+                                        "_id": "27d759c"
+                                    },
+                                    {
+                                        "icon": "heart",
+                                        "title": "Medical Aid",
+                                        "description": "Supplying medical equipment, first aid kits, and supporting rehabilitation programs for wounded soldiers.",
+                                        "_id": "4c3d8a1"
+                                    },
+                                    {
+                                        "icon": "users",
+                                        "title": "Refugee Assistance",
+                                        "description": "Helping Ukrainian refugees in Latvia with housing, legal aid, and integration support.",
+                                        "_id": "b23bffc"
+                                    },
+                                    {
+                                        "icon": "truck",
+                                        "title": "Humanitarian Convoys",
+                                        "description": "Organizing regular supply convoys delivering food, medicine, and essential goods to affected regions.",
+                                        "_id": "a79a9ef"
+                                    }
+                                ],
+                                "org_items": [
+                                    {
+                                        "text": "Reg. No: 40008XXXXXX",
+                                        "color": "gold",
+                                        "_id": "8d6f378"
+                                    },
+                                    {
+                                        "text": "Operating since 2022",
+                                        "color": "blue",
+                                        "_id": "c969a75"
+                                    },
+                                    {
+                                        "text": "ISO 9001 Certified",
+                                        "color": "gold",
+                                        "_id": "d12099a"
+                                    }
+                                ],
+                                "org_stats": [
+                                    {
+                                        "value": "3+",
+                                        "label": "YEARS ACTIVE",
+                                        "color": "gold",
+                                        "_id": "19a6350"
+                                    },
+                                    {
+                                        "value": "50+",
+                                        "label": "VOLUNTEERS",
+                                        "color": "blue",
+                                        "_id": "398280a"
+                                    },
+                                    {
+                                        "value": "150+",
+                                        "label": "CONVOYS SENT",
+                                        "color": "light",
+                                        "_id": "e57044c"
+                                    },
+                                    {
+                                        "value": "24/7",
+                                        "label": "OPERATIONS",
+                                        "color": "gold",
+                                        "_id": "ca0c3aa"
+                                    }
+                                ]
+                            },
                             "elements": []
                         }
                     ],
@@ -156,7 +267,44 @@
                             "id": "95d9464",
                             "elType": "widget",
                             "widgetType": "fu-campaigns",
-                            "settings": {},
+                            "settings": {
+                                "anchor": "campaigns",
+                                "kicker": "// ACTIVE CAMPAIGNS",
+                                "title": "FUNDRAISING",
+                                "highlight": "GOALS",
+                                "highlight_color": "blue",
+                                "intro": "Choose a goal and see exactly where your money goes.",
+                                "currency": "€",
+                                "campaigns": [
+                                    {
+                                        "title": "FPV Drones for the Front",
+                                        "description": "Reconnaissance and FPV drones for frontline units.",
+                                        "goal": 50000,
+                                        "raised": 37250,
+                                        "button_text": "Support this goal",
+                                        "button_url": "#donate",
+                                        "_id": "688f0c3"
+                                    },
+                                    {
+                                        "title": "Tactical Medicine Kits",
+                                        "description": "IFAK first aid kits and tourniquets for soldiers.",
+                                        "goal": 20000,
+                                        "raised": 16400,
+                                        "button_text": "Support this goal",
+                                        "button_url": "#donate",
+                                        "_id": "8291f08"
+                                    },
+                                    {
+                                        "title": "Evacuation Vehicle",
+                                        "description": "A 4x4 vehicle for evacuating the wounded.",
+                                        "goal": 35000,
+                                        "raised": 12900,
+                                        "button_text": "Support this goal",
+                                        "button_url": "#donate",
+                                        "_id": "cc3eba4"
+                                    }
+                                ]
+                            },
                             "elements": []
                         }
                     ],
@@ -209,7 +357,33 @@
                             "id": "c546aaa",
                             "elType": "widget",
                             "widgetType": "fu-donate",
-                            "settings": {},
+                            "settings": {
+                                "anchor": "donate",
+                                "kicker": "// SUPPORT",
+                                "title": "MAKE A",
+                                "highlight": "DONATION",
+                                "highlight_color": "gold",
+                                "intro": "Every contribution directly supports our humanitarian operations. 100% of donations go towards aid for Ukraine.",
+                                "quick_title": "QUICK DONATE",
+                                "amounts": "10,25,50,100,250,500",
+                                "default_amount": 50,
+                                "currency": "€",
+                                "donate_url": "",
+                                "bank_title": "Bank Transfer",
+                                "bank_sub": "EUR / USD",
+                                "iban": "LV80HABA0551XXXXXXXX",
+                                "swift": "HABALV22",
+                                "paypal_title": "PayPal",
+                                "paypal_sub": "Instant transfer",
+                                "paypal_text": "Send donations directly via PayPal. Include \"Charitable contribution\" in the note.",
+                                "paypal_email": "donate@ukraine-support.lv",
+                                "paypal_url": "https://paypal.me",
+                                "crypto_title": "Crypto",
+                                "crypto_sub": "BTC / ETH / USDT",
+                                "btc": "bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh",
+                                "eth": "0x71C76521834D1C5C5e9E8F",
+                                "trust": "Secure payments|100% goes to aid|Tax deductible"
+                            },
                             "elements": []
                         }
                     ],
@@ -262,7 +436,72 @@
                             "id": "d561f34",
                             "elType": "widget",
                             "widgetType": "fu-reports",
-                            "settings": {},
+                            "settings": {
+                                "anchor": "reports",
+                                "kicker": "// TRANSPARENCY",
+                                "title": "FINANCIAL",
+                                "highlight": "REPORTS",
+                                "highlight_color": "blue",
+                                "intro": "Complete transparency in all our operations. Download our financial statements, audit reports, and impact assessments.",
+                                "view_all_text": "View All Reports",
+                                "view_all_url": "#",
+                                "reports": [
+                                    {
+                                        "type": "Financial",
+                                        "title": "Q4 2024 Financial Report",
+                                        "date": "December 2024",
+                                        "file": "",
+                                        "_id": "800f9bd"
+                                    },
+                                    {
+                                        "type": "Impact",
+                                        "title": "Annual Impact Report 2024",
+                                        "date": "November 2024",
+                                        "file": "",
+                                        "_id": "84b66cc"
+                                    },
+                                    {
+                                        "type": "Operations",
+                                        "title": "Q3 2024 Operations Summary",
+                                        "date": "October 2024",
+                                        "file": "",
+                                        "_id": "be5a9da"
+                                    },
+                                    {
+                                        "type": "Audit",
+                                        "title": "Audit Report 2023",
+                                        "date": "March 2024",
+                                        "file": "",
+                                        "_id": "350d806"
+                                    }
+                                ],
+                                "stats": [
+                                    {
+                                        "value": "€523,847",
+                                        "label": "TOTAL RAISED 2024",
+                                        "color": "gold",
+                                        "_id": "ae9a175"
+                                    },
+                                    {
+                                        "value": "98.7%",
+                                        "label": "TO DIRECT AID",
+                                        "color": "blue",
+                                        "_id": "10dbec8"
+                                    },
+                                    {
+                                        "value": "1.3%",
+                                        "label": "ADMIN COSTS",
+                                        "color": "light",
+                                        "_id": "9f02fe8"
+                                    },
+                                    {
+                                        "value": "4",
+                                        "label": "AUDITS PASSED",
+                                        "color": "gold",
+                                        "_id": "7ee2fcc"
+                                    }
+                                ]
+                            },
                             "elements": []
                         }
                     ],
@@ -315,7 +554,18 @@
                             "id": "1954e73",
                             "elType": "widget",
                             "widgetType": "fu-news",
-                            "settings": {},
+                            "settings": {
+                                "anchor": "news",
+                                "kicker": "// LATEST UPDATES",
+                                "title": "FIELD",
+                                "highlight": "NEWS",
+                                "highlight_color": "blue",
+                                "intro": "",
+                                "count": 3,
+                                "category": "",
+                                "read_more": "Read more",
+                                "empty_text": "News from the field will appear here soon."
+                            },
                             "elements": []
                         }
                     ],
@@ -368,7 +618,17 @@
                             "id": "c6d9001",
                             "elType": "widget",
                             "widgetType": "fu-volunteer",
-                            "settings": {},
+                            "settings": {
+                                "anchor": "volunteer",
+                                "kicker": "// JOIN US",
+                                "title": "BECOME A",
+                                "highlight": "VOLUNTEER",
+                                "highlight_color": "gold",
+                                "intro": "Give your time and skills. Tell us how you can help.",
+                                "areas": "Logistics\nSorting supplies\nTranslation\nDriving\nFundraising\nOther",
+                                "button_text": "Sign up to volunteer",
+                                "success": "Thank you! We will contact you soon."
+                            },
                             "elements": []
                         }
                     ],
@@ -421,7 +681,41 @@
                             "id": "f0247b7",
                             "elType": "widget",
                             "widgetType": "fu-faq",
-                            "settings": {},
+                            "settings": {
+                                "anchor": "faq",
+                                "kicker": "// QUESTIONS",
+                                "title": "FREQUENTLY",
+                                "highlight": "ASKED",
+                                "highlight_color": "gold",
+                                "intro": "",
+                                "faqs": [
+                                    {
+                                        "q": "Where does my donation go?",
+                                        "a": "Donations go directly to aid: equipment, medical supplies and support for refugees. Our financial reports show every expense.",
+                                        "_id": "96b3d26"
+                                    },
+                                    {
+                                        "q": "Can I get a receipt for my donation?",
+                                        "a": "Yes. Write to us with your payment details and we will send you a donation confirmation.",
+                                        "_id": "69f9d32"
+                                    },
+                                    {
+                                        "q": "Can I donate items instead of money?",
+                                        "a": "Yes. Contact us first so we can tell you which items are needed right now and where to bring them.",
+                                        "_id": "f00083c"
+                                    },
+                                    {
+                                        "q": "How can I volunteer?",
+                                        "a": "We always need help with logistics, sorting supplies and translation. Send us a message through the contact form.",
+                                        "_id": "297063b"
+                                    },
+                                    {
+                                        "q": "Is the organization officially registered?",
+                                        "a": "Yes, we are a registered non-governmental organization in Latvia. Our registration number is shown in the About section.",
+                                        "_id": "8eb3bfd"
+                                    }
+                                ]
+                            },
                             "elements": []
                         }
                     ],
@@ -474,7 +768,26 @@
                             "id": "bd2ed87",
                             "elType": "widget",
                             "widgetType": "fu-contact",
-                            "settings": {},
+                            "settings": {
+                                "anchor": "contact",
+                                "kicker": "// GET IN TOUCH",
+                                "title": "CONTACT",
+                                "highlight": "US",
+                                "highlight_color": "gold",
+                                "intro": "Have questions? Want to volunteer or partner with us? We'd love to hear from you.",
+                                "email": "info@ukraine-support.lv",
+                                "phone": "+371 2000 0000",
+                                "address": "Brīvības iela 100\nRīga, LV-1001, Latvia",
+                                "facebook": "#",
+                                "instagram": "#",
+                                "linkedin": "#",
+                                "hours_week": "09:00 - 18:00",
+                                "hours_sat": "10:00 - 14:00",
+                                "hours_sun": "Closed",
+                                "form_title": "SEND A MESSAGE",
+                                "button_text": "Send Message",
+                                "success": "Thank you! Your message has been sent."
+                            },
                             "elements": []
                         }
                     ],

@@ -7,7 +7,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'FU_VERSION', '1.0.1' );
+define( 'FU_VERSION', '1.1.0' );
 define( 'FU_DIR', get_template_directory() );
 define( 'FU_URI', get_template_directory_uri() );
 
@@ -16,6 +16,7 @@ require FU_DIR . '/inc/defaults.php';
 require FU_DIR . '/inc/template-functions.php';
 require FU_DIR . '/inc/customizer.php';
 require FU_DIR . '/inc/forms.php';
+require FU_DIR . '/inc/reports.php';
 require FU_DIR . '/inc/setup.php';
 require FU_DIR . '/inc/elementor.php';
 

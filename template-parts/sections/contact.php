@@ -13,6 +13,7 @@ $social = array(
 	'facebook'  => $a['facebook'],
 	'instagram' => $a['instagram'],
 	'linkedin'  => $a['linkedin'],
+	'twitter'   => $a['twitter'],
 );
 $social = array_filter( $social );
 ?>

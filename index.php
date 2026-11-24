@@ -12,12 +12,14 @@ if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_
 	<section class="fu-section fu-archive">
 		<div class="fu-container">
 			<header class="fu-section__header">
-				<div class="fu-kicker">// <?php esc_html_e( 'LATEST UPDATES', 'future-ukraine' ); ?></div>
+				<div class="fu-kicker">// <?php echo is_post_type_archive( 'report' ) ? esc_html__( 'TRANSPARENCY', 'future-ukraine' ) : esc_html__( 'LATEST UPDATES', 'future-ukraine' ); ?></div>
 				<h1 class="fu-section__title">
 					<?php
 					if ( is_search() ) {
 						/* translators: %s search query */
 						printf( esc_html__( 'Search: %s', 'future-ukraine' ), '<span class="fu-c-gold">' . esc_html( get_search_query() ) . '</span>' );
+					} elseif ( is_post_type_archive( 'report' ) ) {
+						echo esc_html__( 'MONTHLY', 'future-ukraine' ) . ' <span class="fu-c-gold">' . esc_html__( 'REPORTS', 'future-ukraine' ) . '</span>';
 					} elseif ( is_archive() ) {
 						echo wp_kses_post( get_the_archive_title() );
 					} else {

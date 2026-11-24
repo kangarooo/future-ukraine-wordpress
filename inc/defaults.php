@@ -208,12 +208,23 @@ function fu_sections_schema() {
 			'icon'      => 'eicon-document-file',
 			'anchor'    => 'reports',
 			'fields'    => fu_heading_fields( '// TRANSPARENCY', 'FINANCIAL', 'REPORTS', 'blue', 'Complete transparency in all our operations. Download our financial statements, audit reports, and impact assessments.' ) + array(
+				'source'        => array(
+					'select',
+					__( 'Reports to show', 'future-ukraine' ),
+					'auto',
+					array(
+						'auto'   => __( 'Report posts if any exist, else the list below', 'future-ukraine' ),
+						'posts'  => __( 'Report posts (wp-admin → Reports)', 'future-ukraine' ),
+						'manual' => __( 'Only the list below', 'future-ukraine' ),
+					),
+				),
+				'posts_count'   => array( 'number', __( 'Number of report posts', 'future-ukraine' ), 4 ),
 				'view_all_text' => array( 'text', __( '"View all" button text', 'future-ukraine' ), 'View All Reports' ),
-				'view_all_url'  => array( 'url', __( '"View all" button link', 'future-ukraine' ), '#' ),
+				'view_all_url'  => array( 'url', __( '"View all" button link (empty or # = /reports/ archive)', 'future-ukraine' ), '' ),
 			),
 			'repeaters' => array(
 				'reports' => array(
-					'label'   => __( 'Reports', 'future-ukraine' ),
+					'label'   => __( 'Reports (manual list)', 'future-ukraine' ),
 					'fields'  => array(
 						'type'  => array( 'text', __( 'Type', 'future-ukraine' ), 'Financial' ),
 						'title' => array( 'text', __( 'Title', 'future-ukraine' ), '' ),
@@ -299,6 +310,7 @@ function fu_sections_schema() {
 				'facebook'    => array( 'url', 'Facebook URL', '#' ),
 				'instagram'   => array( 'url', 'Instagram URL', '#' ),
 				'linkedin'    => array( 'url', 'LinkedIn URL', '#' ),
+				'twitter'     => array( 'url', 'X / Twitter URL', '' ),
 				'hours_week'  => array( 'text', __( 'Hours Monday – Friday', 'future-ukraine' ), '09:00 - 18:00' ),
 				'hours_sat'   => array( 'text', __( 'Hours Saturday', 'future-ukraine' ), '10:00 - 14:00' ),
 				'hours_sun'   => array( 'text', __( 'Hours Sunday', 'future-ukraine' ), 'Closed' ),
